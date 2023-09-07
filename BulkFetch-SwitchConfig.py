@@ -16,7 +16,7 @@
     Version        : 1.0
 
 .EXAMPLE
-    python3 Fetch-SwitchConfig.py -file ~/config/switches/allswitches.txt -username admin -password secret
+    python3 BulkFetch-SwitchConfig.py -file ~/allswitches.txt -username admin -password secret
 
     This will attempt to fetch configurations for all switches listed in the allswitches.txt file using the provided credentials and save them in the respective directories.
 """
