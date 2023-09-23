@@ -21,7 +21,6 @@
     This will attempt to fetch configurations for all switches listed in the allswitches.txt file using the provided credentials and save them in the respective directories.
 """
 
-
 import paramiko
 import argparse
 import os
