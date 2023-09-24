@@ -1,7 +1,7 @@
 """
 ---------------------------------------------------------------
 Script Name: OpenSearch Index Management and Snapshot Creator
-Author: Dan
+Author: Dan Clancey
 Date: 12-Jun-2023
 Version: 1.0
 Description:
