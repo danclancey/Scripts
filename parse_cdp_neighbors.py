@@ -10,7 +10,7 @@ Description:
     IP address, Platform, Capabilities, and Interface. The parsed information is then written to a CSV file for easy analysis.
 
 Usage:
-    python cdp_neighbor_info.py -u [SSH_USERNAME] -p [SSH_PASSWORD] -H [SSH_HOST] -t [TEXT_OUTPUT_FILE]
+    python parse_cdp_neighbors.py -u [SSH_USERNAME] -p [SSH_PASSWORD] -H [SSH_HOST] -t [TEXT_OUTPUT_FILE]
 
     Where:
     [SSH_USERNAME] is the SSH username for the device.
