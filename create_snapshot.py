@@ -1,3 +1,31 @@
+"""
+---------------------------------------------------------------
+Script Name: OpenSearch Index Management and Snapshot Creator
+Author: Dan
+Date: 12-Jun-2023
+Version: 1.0
+Description:
+    This script manages OpenSearch indices by querying the index status and creating snapshots. 
+    It keeps the last 9 indices and creates snapshots for the rest before potentially removing them. 
+    If the snapshot creation fails, it sends an email notification.
+
+Usage:
+    python opensearch_index_manager.py
+
+Requirements:
+    - Python 3.x
+    - pytz library
+    - requests library
+    - smtplib library
+    - re library
+
+Notes:
+    - You must have authentication credentials for both OpenSearch and the Gmail SMTP server.
+    - This script uses the urllib3 library, which will raise InsecureRequestWarnings if the verification of SSL certificates is disabled.
+    To suppress these warnings, the script has disabled these specific warnings.
+---------------------------------------------------------------
+"""
+
 import pytz
 import re
 import requests
