@@ -11,7 +11,7 @@ Description:
     then written to a CSV file for easy analysis.
 
 Usage:
-    python cdp_neighbor_telnet.py -u [TELNET_USERNAME] -p [TELNET_PASSWORD] -H [TELNET_HOST] -t [TEXT_OUTPUT_FILE]
+    python parse_cdp_neighbors_telnet.py -u [TELNET_USERNAME] -p [TELNET_PASSWORD] -H [TELNET_HOST] -t [TEXT_OUTPUT_FILE]
 
     Where:
     [TELNET_USERNAME] is the Telnet username for the device.
@@ -20,7 +20,7 @@ Usage:
     [TEXT_OUTPUT_FILE] is the output text file to store raw CDP neighbor information.
 
 Examples:
-    python cdp_neighbor_telnet.py -u admin -p password -H 192.168.1.1 -t cdp_output.txt
+    python parse_cdp_neighbors_telnet.py -u admin -p password -H 192.168.1.1 -t cdp_output.txt
 
 Requirements:
     - Python 3.x
