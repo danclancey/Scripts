@@ -10,7 +10,7 @@ Description:
     If the snapshot creation fails, it sends an email notification.
 
 Usage:
-    python opensearch_index_manager.py
+    python create_snapshot.py
 
 Requirements:
     - Python 3.x

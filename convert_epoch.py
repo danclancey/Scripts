@@ -9,7 +9,7 @@ Description:
     adjusting for the US Eastern timezone.
 
 Usage:
-    python epoch_time_converter.py [epoch_time]
+    python convert_epoch.py [epoch_time]
 
     Where:
     [epoch_time] is the epoch time to convert, specified as an integer.

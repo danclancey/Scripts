@@ -11,7 +11,7 @@
     -password   [string]  : The password for SSH authentication.
 
 .NOTES
-    File Name      : Fetch-RemoteConfig.ps1
+    File Name      : Fetch-SwitchConfig.ps1
     Author         : Dan Clancey
     Prerequisite   : PowerShell 
                      PuTTY's plink installed at "C:\Program Files\PuTTY\plink.exe" [or change path for $plinkPath]
