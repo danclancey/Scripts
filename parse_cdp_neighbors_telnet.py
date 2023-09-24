@@ -1,3 +1,37 @@
+"""
+---------------------------------------------------------------
+Script Name: CDP Neighbor Info Fetcher via Telnet and Parser
+Author: Dan Clancey
+Date: 2-May-2023
+Version: 1.0
+Description:
+    This script connects to a remote device via Telnet to retrieve CDP (Cisco Discovery Protocol) neighbor information.
+    The raw CDP neighbor information is saved to a specified text file. The script then parses this information to collect
+    relevant details like Device ID, IP address, Platform, Capabilities, and Interface. The parsed information is
+    then written to a CSV file for easy analysis.
+
+Usage:
+    python cdp_neighbor_telnet.py -u [TELNET_USERNAME] -p [TELNET_PASSWORD] -H [TELNET_HOST] -t [TEXT_OUTPUT_FILE]
+
+    Where:
+    [TELNET_USERNAME] is the Telnet username for the device.
+    [TELNET_PASSWORD] is the Telnet password for the device.
+    [TELNET_HOST] is the Telnet hostname or IP address of the device.
+    [TEXT_OUTPUT_FILE] is the output text file to store raw CDP neighbor information.
+
+Examples:
+    python cdp_neighbor_telnet.py -u admin -p password -H 192.168.1.1 -t cdp_output.txt
+
+Requirements:
+    - Python 3.x
+    - telnetlib library for Telnet
+    - argparse library for parsing command-line arguments
+    - re library for regular expression matching
+    - csv library for CSV file operations
+    - os library for file and path manipulation
+---------------------------------------------------------------
+"""
+
 import re
 import csv
 import argparse
