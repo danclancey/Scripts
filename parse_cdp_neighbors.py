@@ -1,3 +1,36 @@
+"""
+---------------------------------------------------------------
+Script Name: CDP Neighbor Info Fetcher and Parser
+Author: Dan Clancey
+Date: 2-May-2023
+Version: 1.0
+Description:
+    This script connects to a remote device via SSH to retrieve CDP (Cisco Discovery Protocol) neighbor information.
+    The raw CDP neighbor information is saved to a specified text file, and then parsed to collect details like Device ID,
+    IP address, Platform, Capabilities, and Interface. The parsed information is then written to a CSV file for easy analysis.
+
+Usage:
+    python cdp_neighbor_info.py -u [SSH_USERNAME] -p [SSH_PASSWORD] -H [SSH_HOST] -t [TEXT_OUTPUT_FILE]
+
+    Where:
+    [SSH_USERNAME] is the SSH username for the device.
+    [SSH_PASSWORD] is the SSH password for the device.
+    [SSH_HOST] is the SSH hostname or IP address of the device.
+    [TEXT_OUTPUT_FILE] is the output text file to store raw CDP neighbor information.
+
+Examples:
+    python cdp_neighbor_info.py -u admin -p password -H 192.168.1.1 -t cdp_output.txt
+
+Requirements:
+    - Python 3.x
+    - paramiko library for SSH
+    - argparse library for parsing command-line arguments
+    - re library for regular expression matching
+    - csv library for CSV file operations
+    - os library for file and path manipulation
+---------------------------------------------------------------
+"""
+
 import re
 import csv
 import argparse
