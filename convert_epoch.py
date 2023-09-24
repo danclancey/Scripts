@@ -1,7 +1,7 @@
 """
 ---------------------------------------------------------------
 Script Name: Epoch Time Converter
-Author: Dan
+Author: Dan Clancey
 Date: 7-May-2023
 Version: 1.0
 Description:
