@@ -19,7 +19,7 @@ Usage:
     [TEXT_OUTPUT_FILE] is the output text file to store raw CDP neighbor information.
 
 Examples:
-    python cdp_neighbor_info.py -u admin -p password -H 192.168.1.1 -t cdp_output.txt
+    python parse_cdp_neighbors.py -u admin -p password -H 192.168.1.1 -t cdp_output.txt
 
 Requirements:
     - Python 3.x
