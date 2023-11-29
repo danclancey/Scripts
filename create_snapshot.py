@@ -46,8 +46,8 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-username = 'admin' #update to OS username
-password = 'password' # update to OS password
+username = 'admin' # update with OS username
+password = 'password' # update with OS password
 
 def send_email(subject, body, to, gmail_user, gmail_pwd):
     msg = MIMEText(body)
@@ -79,7 +79,7 @@ def create_snapshot(index_name, snapshot_name, auth, verify=False):
     print(response.text)
     if response.status_code != 200:
         logging.error(f"Failed to create snapshot for {index_name}. Status code: {response.status_code}")
-        send_email('Snapshot creation failed', f'Failed to create snapshot for {index_name}. Status code: {response.status_code}', 'recipient@email.com', 'sender@email.com', 'senderpassword') # update with recipient, sender, sender password
+        send_email('Snapshot creation failed', f'Failed to create snapshot for {index_name}. Status code: {response.status_code}', 'recipient@email.com', 'sender@email.com', 'sender password') # update recipient email, sender email/password
         return False
     return True
 
@@ -151,3 +151,4 @@ for base_name, rotation_number, creation_date, index in indices:
     if (base_name, rotation_number, creation_date, index) not in indices_to_keep:
         if create_snapshot(index, creation_date, (username, password)):
             logging.info(f"Created snapshot for {base_name}_{rotation_number}: {creation_date}")
+rotation_number}: {creation_date}")
