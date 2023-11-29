@@ -1,3 +1,30 @@
+"""
+---------------------------------------------------------------
+Script Name: OpenSearch Snapshot deletion management
+Author: Dan Clancey
+Date: 24-Oct-2023
+Version: 1.0
+Description:
+    This script automates the management of OpenSearch repositories. It periodically checks the number of repository snapshots and deletes the oldest one if the count exceeds 170. It uses basic authentication for OpenSearch server requests. The script also features an email notification system using Gmail's SMTP server for alerts in case of failures.
+
+Usage:
+    python opensearch_repo_manager.py
+
+Requirements:
+    - Python 3.x
+    - requests library: for making HTTP requests to the OpenSearch server.
+    - smtplib library: for sending email notifications.
+    - logging library: for logging actions and errors.
+    - urllib3 library: for handling HTTP connections.
+
+Notes:
+    - Ensure that the OpenSearch server's URL, along with the username and password, are correctly configured in the script.
+    - Update the email sender, recipient, and SMTP authentication details for the email notification functionality.
+    - The script disables SSL warnings (InsecureRequestWarning) from urllib3, which may occur during connections to the OpenSearch server. This is to prevent log clutter but consider the security implications in a production environment.
+---------------------------------------------------------------
+"""
+
+
 import requests
 import logging
 from datetime import datetime
