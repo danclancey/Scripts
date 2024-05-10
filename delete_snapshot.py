@@ -11,7 +11,7 @@ Description:
     The script also features an email notification system using Gmail's SMTP server for alerts in case of failures.
 
 Usage:
-    python opensearch_repo_manager.py
+    python delete_snapshot.py
 
 Requirements:
     - Python 3.x
